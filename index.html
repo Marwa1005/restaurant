@@ -1,0 +1,580 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Table Dorée | Restaurant</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#" class="logo">
+                La Table <span>Dorée</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#reservation" class="nav-btn">
+                Réserver
+            </a>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="accueil">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                BIENVENUE À
+            </p>
+
+            <h1>
+                La Table<br>
+                <span>Dorée</span>
+            </h1>
+
+            <p>
+                Une cuisine raffinée, des produits frais<br>
+                et des moments inoubliables.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">
+                    Découvrir le menu
+                </a>
+
+                <a href="#reservation" class="btn btn-outline">
+                    Réserver une table
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about section" id="apropos">
+
+        <div class="container about-container">
+
+            <div class="about-image">
+                <img
+                    src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=80"
+                    alt="Restaurant">
+            </div>
+
+            <div class="about-content">
+
+                <p class="section-label">
+                    NOTRE HISTOIRE
+                </p>
+
+                <h2>
+                    Une passion pour<br>
+                    la bonne cuisine
+                </h2>
+
+                <p>
+                    Bienvenue à La Table Dorée, un restaurant où
+                    tradition et créativité se rencontrent.
+                </p>
+
+                <p>
+                    Notre chef sélectionne soigneusement des
+                    produits frais afin de créer des plats
+                    généreux et élégants.
+                </p>
+
+                <a href="#menu" class="text-link">
+                    Découvrir notre cuisine →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MENU -->
+    <section class="menu-section section" id="menu">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <p class="section-label">
+                    NOTRE MENU
+                </p>
+
+                <h2>
+                    Nos spécialités
+                </h2>
+
+                <p>
+                    Découvrez une sélection de nos plats préférés.
+                </p>
+
+            </div>
+
+
+            <!-- FILTERS -->
+            <div class="menu-filters">
+
+                <button class="filter active" data-category="all">
+                    Tous
+                </button>
+
+                <button class="filter" data-category="entrees">
+                    Entrées
+                </button>
+
+                <button class="filter" data-category="plats">
+                    Plats
+                </button>
+
+                <button class="filter" data-category="desserts">
+                    Desserts
+                </button>
+
+            </div>
+
+
+            <!-- MENU ITEMS -->
+            <div class="menu-grid">
+
+                <!-- ITEM -->
+                <div class="menu-card" data-category="entrees">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"
+                        alt="Salade fraîche">
+
+                    <div class="menu-card-content">
+
+                        <div class="menu-title">
+                            <h3>Salade Fraîche</h3>
+                            <span>55 DH</span>
+                        </div>
+
+                        <p>
+                            Salade fraîche, légumes de saison,
+                            fromage et sauce maison.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ITEM -->
+                <div class="menu-card" data-category="entrees">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=80"
+                        alt="Bruschetta">
+
+                    <div class="menu-card-content">
+
+                        <div class="menu-title">
+                            <h3>Bruschetta</h3>
+                            <span>45 DH</span>
+                        </div>
+
+                        <p>
+                            Pain grillé, tomates fraîches,
+                            basilic et huile d'olive.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ITEM -->
+                <div class="menu-card" data-category="plats">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80"
+                        alt="Steak grillé">
+
+                    <div class="menu-card-content">
+
+                        <div class="menu-title">
+                            <h3>Steak Grillé</h3>
+                            <span>120 DH</span>
+                        </div>
+
+                        <p>
+                            Steak grillé, légumes rôtis
+                            et sauce au poivre.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ITEM -->
+                <div class="menu-card" data-category="plats">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=700&q=80"
+                        alt="Pâtes">
+
+                    <div class="menu-card-content">
+
+                        <div class="menu-title">
+                            <h3>Pâtes Crémeuses</h3>
+                            <span>75 DH</span>
+                        </div>
+
+                        <p>
+                            Pâtes fraîches, sauce crémeuse,
+                            parmesan et herbes.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ITEM -->
+                <div class="menu-card" data-category="plats">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80"
+                        alt="Pizza">
+
+                    <div class="menu-card-content">
+
+                        <div class="menu-title">
+                            <h3>Pizza Maison</h3>
+                            <span>80 DH</span>
+                        </div>
+
+                        <p>
+                            Pâte maison, mozzarella,
+                            tomates et basilic frais.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ITEM -->
+                <div class="menu-card" data-category="desserts">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80"
+                        alt="Gâteau au chocolat">
+
+                    <div class="menu-card-content">
+
+                        <div class="menu-title">
+                            <h3>Gâteau Chocolat</h3>
+                            <span>40 DH</span>
+                        </div>
+
+                        <p>
+                            Gâteau au chocolat fondant
+                            accompagné de glace.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SPECIAL -->
+    <section class="special">
+
+        <div class="special-overlay"></div>
+
+        <div class="special-content">
+
+            <p class="section-label">
+                CHEZ NOUS
+            </p>
+
+            <h2>
+                Le goût de la tradition
+            </h2>
+
+            <p>
+                Des ingrédients soigneusement sélectionnés,
+                une cuisine généreuse et beaucoup de passion.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- GALLERY -->
+    <section class="gallery section" id="galerie">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <p class="section-label">
+                    GALERIE
+                </p>
+
+                <h2>
+                    Découvrez notre univers
+                </h2>
+
+            </div>
+
+            <div class="gallery-grid">
+
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Restaurant">
+
+                <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80" alt="Salle">
+
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Table">
+
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Plat">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESERVATION -->
+    <section class="reservation section" id="reservation">
+
+        <div class="container reservation-container">
+
+            <div>
+
+                <p class="section-label">
+                    RÉSERVATION
+                </p>
+
+                <h2>
+                    Réservez votre table
+                </h2>
+
+                <p>
+                    Préparez votre prochaine expérience
+                    gourmande chez La Table Dorée.
+                </p>
+
+            </div>
+
+
+            <form id="reservationForm">
+
+                <div class="form-row">
+
+                    <input
+                        type="text"
+                        placeholder="Votre nom"
+                        required
+                    >
+
+                    <input
+                        type="tel"
+                        placeholder="Téléphone"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-row">
+
+                    <input
+                        type="date"
+                        required
+                    >
+
+                    <select required>
+
+                        <option value="">
+                            Nombre de personnes
+                        </option>
+
+                        <option>1 personne</option>
+                        <option>2 personnes</option>
+                        <option>3 personnes</option>
+                        <option>4 personnes</option>
+                        <option>5 personnes</option>
+                        <option>6+ personnes</option>
+
+                    </select>
+
+                </div>
+
+                <textarea
+                    placeholder="Message (optionnel)"
+                    rows="4">
+                </textarea>
+
+                <button type="submit" class="btn btn-primary">
+                    Envoyer la réservation
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <p class="section-label">
+                    CONTACT
+                </p>
+
+                <h2>
+                    Venez nous rendre visite
+                </h2>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📍
+                    </div>
+
+                    <h3>Adresse</h3>
+
+                    <p>
+                        25 Avenue Mohammed V<br>
+                        Casablanca, Maroc
+                    </p>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📞
+                    </div>
+
+                    <h3>Téléphone</h3>
+
+                    <p>
+                        +212 6 00 00 00 00
+                    </p>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        ✉️
+                    </div>
+
+                    <h3>Email</h3>
+
+                    <p>
+                        contact@latabledoree.com
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div>
+
+                <div class="logo footer-logo">
+                    La Table <span>Dorée</span>
+                </div>
+
+                <p>
+                    Une cuisine authentique,
+                    préparée avec passion.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#accueil">Accueil</a>
+                <a href="#menu">Menu</a>
+                <a href="#apropos">À propos</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            © 2026 La Table Dorée — Tous droits réservés.
+
+        </div>
+
+    </footer>
+
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
